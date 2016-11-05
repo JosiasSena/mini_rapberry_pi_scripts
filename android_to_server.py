@@ -5,12 +5,12 @@ import RPi.GPIO as GPIO
 
 RUNNING = True
 
-LED_PIN = 17
+LED_PIN = 19
 
 FREQUENCY_ON = 100  # Hz
 FREQUENCY_OFF = 0  # Hz
 
-HOST = "192.168.1.5"
+HOST = "192.168.1.7"
 PORT = 7000
 
 socket = socket(AF_INET, SOCK_STREAM)
@@ -46,7 +46,7 @@ try:
             break
 
         # decoded message - a string representation
-        received_message = str(data.decode('utf-8'))
+        message = str(data.decode('utf-8'))
 
         if len(message) > 0:
             if message.__contains__("on"):
@@ -58,7 +58,7 @@ try:
             elif message.__contains__("blink"):
                 print "Blinking LED"
 
-                for i in range(999):
+                for i in range(5):
                     turn_led_on()
                     sleep(1)
                     turn_led_off()

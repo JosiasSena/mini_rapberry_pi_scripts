@@ -6,7 +6,7 @@ RUNNING = True
 
 OPEN_HAVEN = "Open RapidSOS Haven App"
 
-HOST = "192.168.1.5"
+HOST = "192.168.1.7"
 PORT = 7000
 
 # Button breadboard pin number (change accordingly)

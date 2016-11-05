@@ -6,7 +6,6 @@
         <serverdata>
           <mappings>
             <mapping deploy="/python_scripts" local="$PROJECT_DIR$" web="/" />
-            <mapping deploy="/lightshowpi" local="$PROJECT_DIR$/../lightshowpi" />
           </mappings>
         </serverdata>
       </paths>

@@ -15,7 +15,6 @@ def get_ip_address(ifname):
         struct.pack('256s', ifname[:15])
     )[20:24])
 
-
 lcd.lcd_display_string("IP Address:", 1)
 
 lcd.lcd_display_string(get_ip_address('wlan0'), 2)

@@ -24,7 +24,6 @@ ADDRESS = 0x27
 import smbus
 from time import sleep
 
-
 class i2c_device:
     def __init__(self, addr, port=I2CBUS):
         self.addr = addr
@@ -103,7 +102,6 @@ LCD_NOBACKLIGHT = 0x00
 En = 0b00000100  # Enable bit
 Rw = 0b00000010  # Read/Write bit
 Rs = 0b00000001  # Register select bit
-
 
 class lcd:
     # initializes objects and lcd
