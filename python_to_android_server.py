@@ -27,12 +27,6 @@ GPIO.setwarnings(False)
 # Setting button as an input device
 GPIO.setup(BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-# def button_clicked_callback(channel):
-#     print "Sent", conn.send(OPEN_HAVEN), "bytes on channel", channel
-#
-#
-# GPIO.add_event_detect(BUTTON_PIN, GPIO.RISING, callback=button_clicked_callback, bouncetime=400)
-
 try:
     while RUNNING:
         button_not_clicked = GPIO.input(BUTTON_PIN)
